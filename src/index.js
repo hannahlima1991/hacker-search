@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+import Search from "./components/Search";
 import * as serviceWorker from "./serviceWorker";
 import { createStore } from "redux";
 import allReducers from "./reducers";
 import { Provider } from "react-redux";
+
+//Setting up redux at the root level to make sure all parts of the app have access to it.
 
 const store = createStore(
   allReducers,
@@ -14,7 +16,7 @@ const store = createStore(
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <Search />
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")

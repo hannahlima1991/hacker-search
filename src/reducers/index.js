@@ -1,7 +1,7 @@
 const initialState = {
   searchTerm: "",
   searchResults: [],
-  tag: "story",
+  category: "story",
 };
 
 function searchReducer(state = initialState, action) {
@@ -11,7 +11,7 @@ function searchReducer(state = initialState, action) {
     case "SET_SEARCH_RESULTS":
       return { ...state, searchResults: action.data };
     case "SET_CATEGORY_TYPE":
-      return { ...state, tag: action.data };
+      return { ...state, category: action.data };
     default:
       return state;
   }
