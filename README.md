@@ -1,6 +1,6 @@
 
 
-### This is FrontEnd Felie News
+### This is FrontEnd Feline News
 
 On this App you can search news from the Hacker News Api.
 
